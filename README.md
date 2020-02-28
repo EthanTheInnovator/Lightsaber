@@ -4,7 +4,7 @@
    Here's my Lightsaber app. I worked hard on animating the lightsaber to turn on and off (and matching the visuals with the sound).
    The saber part is actually not an image; it's a dynamically made view which allowed for me to change the color of the saber (try holding on the screen!)
    Onto the motion functions:
-   - On/Off: To detect if the phone is vertical I used the device's percieved gravity vector (based on accelerometer). If the y value of the vector is below -9.5, then it is upright. If it it above 9.5, then it is upside down.
+   - On/Off: Hold upright and tap to turn on, hold upside down and tap to turn off. To detect if the phone is vertical I used the device's percieved gravity vector (based on accelerometer). If the y value of the vector is below -9.5, then it is upright. If it it above 9.5, then it is upside down.
    - Swing: Took me a while to get the sounds not to overlap, but basically it checks if the magnitude of the acceleration is greater than an arbitrary amount (I just did a bunch of testing).
    - Clash: This one took me even longer because I tried to overcomplicate it, but then I realized all that has to be done is that if the dy/dx (difference between last acceleration and current acceleration) is above a certain amount (I found 2 to work well) then it will play the clash sound. This surprisingly works well.
 
